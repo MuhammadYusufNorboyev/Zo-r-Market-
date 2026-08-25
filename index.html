@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zo'r Market - Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigatsiya -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Zo'r Market</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Asosiy</a></li>
+                    <li><a href="#catalog">Katalog</a></li>
+                    <li><a href="#cart">Savatcha</a></li>
+                    <li><a href="#contact">Aloqa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bosh sahifa (Home) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Katta Chegirmalar va Yangi Oziq-ovqatlar!</h2>
+            <p>Zo'r Market supermarketida eng yangi mahsulotlar.</p>
+            <a href="#catalog" class="btn">Xaridni boshlash</a>
+        </div>
+    </section>
+
+    <!-- Katalog sahifasi -->
+    <section id="catalog" class="container">
+        <h2>Mahsulotlar Katalogi</h2>
+        <input type="text" class="search-bar" placeholder="Mahsulot qidirish...">
+        <div class="grid">
+            <!-- Mahsulot 1 -->
+            <div class="card">
+                <h3>Yangi Olma</h3>
+                <p class="price">15,000 UZS <del>20,000 UZS</del></p>
+                <button class="btn">Savatchaga qo'shish</button>
+            </div>
+            <!-- Mahsulot 2 -->
+            <div class="card">
+                <h3>Go'sht (1 kg)</h3>
+                <p class="price">85,000 UZS</p>
+                <button class="btn">Savatchaga qo'shish</button>
+            </div>
+            <!-- Mahsulot 3 -->
+            <div class="card">
+                <h3>Sut (1 L)</h3>
+                <p class="price">10,000 UZS</p>
+                <button class="btn">Savatchaga qo'shish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savatcha sahifasi (Cart) -->
+    <section id="cart" class="container bg-light">
+        <h2>Savatcha va Buyurtma</h2>
+        <div class="cart-box">
+            <div class="cart-items">
+                <p>Tanlangan mahsulotlar bu yerda ko'rinadi...</p>
+                <hr>
+                <h3>Umumiy summa: 0 UZS</h3>
+            </div>
+            <div class="order-form">
+                <h3>Buyurtma berish</h3>
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="tel" placeholder="Telefon raqamingiz" required>
+                <button class="btn">Buyurtmani tasdiqlash</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aloqa sahifasi (Contact) -->
+    <section id="contact" class="container">
+        <h2>Biz bilan Aloqa</h2>
+        <div class="contact-info">
+            <p><strong>Biznes nomi:</strong> Zo'r Market</p>
+            <p><strong>Kategoriya:</strong> Supermarket</p>
+            <p><strong>Manzil:</strong> 7VJJ+78, Denau, UZ</p>
+            <p><strong>Telefon:</strong> +998 90 295 31 39</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Zo'r Market. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
