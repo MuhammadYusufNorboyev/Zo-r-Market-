@@ -1,0 +1,177 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Navigatsiya */
+header {
+    background: #27ae60;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home / Hero qismi */
+.hero {
+    background: #eafaf1;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 2px solid #2ecc71;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Tugmalar */
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* Katalog */
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card .price {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card del {
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+/* Savatcha va Buyurtma */
+.bg-light {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.order-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Aloqa */
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Mobil uchun moslashuvchanlik */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header ul li {
+        margin: 5px 10px;
+    }
+    .cart-box {
+        grid-template-columns: 1fr;
+    }
+}
